@@ -2,232 +2,249 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-[#07120B] text-white">
+    <main className="bg-[#07120B] text-white overflow-hidden">
 
       {/* NAVBAR */}
-      <nav className="fixed top-0 w-full z-50 bg-[#07120B]/90 backdrop-blur">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-[#D4AF37]/10">
+        <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
 
           <div className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src="/Logo.jpeg"
               alt="Delvora"
-              width={42}
-              height={42}
+              width={48}
+              height={48}
             />
+
             <div>
-              <h1 className="text-[#D4AF37] tracking-[4px]">
+              <h1 className="text-[#D4AF37] tracking-[4px] text-lg">
                 DELVORA
               </h1>
-              <p className="text-xs tracking-[6px] text-[#D4AF37]">
+              <p className="text-xs tracking-[6px] text-[#D4AF37]/80">
                 ORIGINS
               </p>
             </div>
           </div>
 
-          <div className="hidden md:flex gap-8 text-sm">
+          <div className="hidden md:flex gap-10 text-sm text-white/80">
             <a href="#about">About</a>
             <a href="#products">Products</a>
-            <a href="#values">Values</a>
             <a href="#contact">Contact</a>
           </div>
 
-          <button className="bg-[#D4AF37] text-black px-5 py-2 rounded">
-            Request Catalogue
-          </button>
         </div>
       </nav>
 
       {/* HERO */}
-      <section className="pt-40 pb-32">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative min-h-screen flex items-center">
 
-          <div>
-            <h1 className="text-6xl md:text-7xl leading-tight font-light">
-              Premium Indonesian
-              <br />
-              Spices for
-              <span className="text-[#D4AF37]">
-                {" "}Global Markets
-              </span>
-            </h1>
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1599909535318-67429f3b85ac?q=80&w=2000')",
+          }}
+        />
 
-            <p className="mt-8 text-gray-300 text-lg">
-              Connecting the richness of Indonesia's natural origins
-              with partners worldwide.
+        <div className="absolute inset-0 bg-black/65" />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07120B] via-[#07120B]/70 to-transparent" />
+
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D4AF37]/10 blur-[180px]" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-8">
+
+          <div className="max-w-3xl">
+
+            <p className="text-[#D4AF37] uppercase tracking-[6px] mb-6">
+              Indonesian Premium Export
             </p>
 
-            <div className="flex gap-4 mt-10">
-              <button className="bg-[#D4AF37] text-black px-8 py-4 rounded">
+            <h1 className="text-6xl md:text-8xl leading-none font-light">
+              Premium
+              <br />
+              Cinnamon &
+              <br />
+              Vanilla
+            </h1>
+
+            <p className="mt-8 text-xl text-white/70 max-w-xl leading-8">
+              Bringing the richness of Indonesian spices
+              to international markets through quality,
+              integrity and sustainable sourcing.
+            </p>
+
+            <div className="mt-10 flex gap-4">
+              <button className="bg-[#D4AF37] text-black px-8 py-4 rounded-full font-medium">
                 Request Catalogue
               </button>
 
-              <button className="border border-[#D4AF37] px-8 py-4 rounded">
+              <button className="border border-white/20 px-8 py-4 rounded-full">
                 Contact Us
               </button>
             </div>
-          </div>
 
-          <div className="rounded-3xl overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1600"
-              alt=""
-              className="w-full h-[500px] object-cover"
-            />
           </div>
 
         </div>
+
       </section>
 
-      {/* FEATURES */}
-      <section className="bg-[#0B1C12] py-16">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-center">
+      {/* STATS */}
+      <section className="bg-[#0A160E] border-y border-[#D4AF37]/10">
+
+        <div className="max-w-7xl mx-auto px-8 py-12 grid md:grid-cols-4 gap-8">
 
           <div>
-            <h3 className="text-[#D4AF37] text-xl">
-              100%
-            </h3>
-            <p>Indonesian Origin</p>
+            <h3 className="text-4xl text-[#D4AF37]">100%</h3>
+            <p className="text-white/60 mt-2">
+              Indonesian Origin
+            </p>
           </div>
 
           <div>
-            <h3 className="text-[#D4AF37] text-xl">
-              Premium
-            </h3>
-            <p>Cinnamon & Vanilla</p>
+            <h3 className="text-4xl text-[#D4AF37]">Premium</h3>
+            <p className="text-white/60 mt-2">
+              Export Quality
+            </p>
           </div>
 
           <div>
-            <h3 className="text-[#D4AF37] text-xl">
-              Export Ready
-            </h3>
-            <p>Documentation</p>
+            <h3 className="text-4xl text-[#D4AF37]">Global</h3>
+            <p className="text-white/60 mt-2">
+              International Market
+            </p>
           </div>
 
           <div>
-            <h3 className="text-[#D4AF37] text-xl">
-              Sustainable
-            </h3>
-            <p>Sourcing Network</p>
+            <h3 className="text-4xl text-[#D4AF37]">Trusted</h3>
+            <p className="text-white/60 mt-2">
+              Sustainable Sourcing
+            </p>
           </div>
 
         </div>
+
       </section>
 
       {/* PRODUCTS */}
       <section
         id="products"
-        className="bg-[#F3EEE5] text-black py-24"
+        className="py-28 bg-gradient-to-b from-[#07120B] to-[#0F2015]"
       >
-        <div className="max-w-7xl mx-auto px-6">
 
-          <h2 className="text-center text-4xl mb-14">
-            OUR PRODUCTS
+        <div className="max-w-7xl mx-auto px-8">
+
+          <h2 className="text-center text-5xl mb-16">
+            Our Products
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-10">
 
-            <div className="bg-white rounded-2xl overflow-hidden">
+            <div className="group overflow-hidden rounded-[32px] bg-white/5 border border-white/10">
+
               <img
-                src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=1200"
-                className="h-72 w-full object-cover"
+                src="https://images.unsplash.com/photo-1599909535318-67429f3b85ac?q=80&w=1200"
+                alt="Cinnamon"
+                className="h-[450px] w-full object-cover group-hover:scale-105 duration-700"
               />
-              <div className="p-6">
-                <h3 className="text-2xl mb-2">
-                  CINNAMON
+
+              <div className="p-8">
+                <h3 className="text-3xl text-[#D4AF37]">
+                  Cinnamon
                 </h3>
-                <p>
-                  Premium Indonesian cassia cinnamon.
+
+                <p className="mt-4 text-white/70">
+                  Premium Indonesian cassia cinnamon
+                  sourced directly from trusted growers.
                 </p>
               </div>
+
             </div>
 
-            <div className="bg-white rounded-2xl overflow-hidden">
+            <div className="group overflow-hidden rounded-[32px] bg-white/5 border border-white/10">
+
               <img
-                src="https://images.unsplash.com/photo-1625944524162-0f7868bb9f92?q=80&w=1200"
-                className="h-72 w-full object-cover"
+                src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200"
+                alt="Vanilla"
+                className="h-[450px] w-full object-cover group-hover:scale-105 duration-700"
               />
-              <div className="p-6">
-                <h3 className="text-2xl mb-2">
-                  VANILLA
+
+              <div className="p-8">
+                <h3 className="text-3xl text-[#D4AF37]">
+                  Vanilla
                 </h3>
-                <p>
-                  Premium Indonesian vanilla beans.
+
+                <p className="mt-4 text-white/70">
+                  Hand-selected premium vanilla beans
+                  for international food industries.
                 </p>
               </div>
+
             </div>
 
           </div>
+
         </div>
+
       </section>
 
       {/* ABOUT */}
       <section
         id="about"
-        className="bg-white text-black py-24"
+        className="py-32 bg-[#F6F1E8] text-black"
       >
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
 
           <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200"
-            className="rounded-3xl"
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400"
+            alt=""
+            className="rounded-[40px]"
           />
 
           <div>
-            <h2 className="text-5xl mb-6">
-              ABOUT DELVORA ORIGINS
+
+            <p className="uppercase tracking-[6px] text-[#8F6B18] mb-4">
+              About Delvora Origins
+            </p>
+
+            <h2 className="text-6xl leading-tight">
+              Rooted in Nature.
+              Growing Prosperity.
             </h2>
 
-            <p className="text-lg leading-8">
-              Delvora Origins is an Indonesian export company
-              specializing in premium cinnamon, vanilla and
-              agricultural commodities for global markets.
+            <p className="mt-8 text-lg leading-9 text-black/70">
+              Delvora Origins connects Indonesian
+              agricultural excellence with global
+              demand through premium cinnamon,
+              vanilla and sustainable sourcing
+              partnerships.
             </p>
+
           </div>
 
         </div>
-      </section>
 
-      {/* VALUES */}
-      <section
-        id="values"
-        className="bg-[#0B1C12] py-24"
-      >
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-center text-4xl mb-16">
-            OUR VALUES
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-6">
-
-            {[
-              "Integrity",
-              "Quality",
-              "Sustainability",
-              "Partnership",
-            ].map((item) => (
-              <div
-                key={item}
-                className="border border-[#D4AF37]/20 p-8 rounded-xl text-center"
-              >
-                <h3 className="text-[#D4AF37] text-xl">
-                  {item}
-                </h3>
-              </div>
-            ))}
-
-          </div>
-        </div>
       </section>
 
       {/* CTA */}
-      <section className="py-28 text-center">
-        <h2 className="text-6xl text-[#D4AF37]">
-          Rooted in Nature.
-          <br />
-          Growing Prosperity.
-        </h2>
+      <section className="relative py-32 text-center">
+
+        <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/10 via-transparent to-[#D4AF37]/10" />
+
+        <div className="relative z-10">
+
+          <h2 className="text-6xl text-[#D4AF37]">
+            Let's Grow Together
+          </h2>
+
+          <p className="mt-6 text-white/60">
+            Partner with Delvora Origins for premium Indonesian exports.
+          </p>
+
+        </div>
+
       </section>
 
     </main>
