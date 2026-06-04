@@ -1,122 +1,399 @@
+"use client";
+
 import Image from "next/image";
 
+const colors = {
+darkGreen: "#071c12",
+forestGreen: "#022b17",
+cream: "#F5F1E8",
+gold: "#c29027",
+textDark: "#1F1F1F",
+};
+
 export default function Home() {
-  return (
-    <main className="bg-[#F5F0E6]">
+return (
+<main style={{ backgroundColor: colors.cream }}>
 
-      {/* HERO */}
-      <section className="relative h-screen overflow-hidden">
+  {/* HERO */}
+  <section className="relative min-h-screen overflow-hidden">
 
-        <Image
-          src="/cinnamon-hero.jpg"
-          alt="Cinnamon"
-          fill
-          className="object-cover"
+    <Image
+      src="/cinnamon-hero.jpg"
+      alt="Hero"
+      fill
+      priority
+      className="object-cover"
+    />
+
+    <div className="absolute inset-0 bg-black/60" />
+
+    {/* HEADER */}
+    <div className="absolute top-5 left-8 right-8 z-[9999] flex justify-between items-start">
+
+      <Image
+        src="/Logo_v2.jpeg"
+        alt="Logo"
+        width={200}
+        height={200}
+        className="object-contain"
+      />
+
+      <details className="absolute top-0 right-0">
+        <summary className="list-none cursor-pointer text-white text-5xl select-none">
+          ⋮
+        </summary>
+
+        <div
+          className="absolute right-0 mt-4 rounded-2xl p-5 min-w-[250px] shadow-2xl"
+          style={{ backgroundColor: colors.darkGreen }}
+        >
+          <a href="#about" className="block py-3 text-white">
+            About Delvora Origins
+          </a>
+
+          <a href="#products" className="block py-3 text-white">
+            Our Products
+          </a>
+
+          <a href="#articles" className="block py-3 text-white">
+            Articles
+          </a>
+
+          <a href="#contact" className="block py-3 text-white">
+            Contact Us
+          </a>
+        </div>
+      </details>
+
+    </div>
+
+    {/* TEXT */}
+    <div className="relative z-10 flex items-center min-h-screen px-6">
+      <div className="max-w-3xl text-white">
+
+        <p
+          className="uppercase tracking-[0.35em] mb-6"
+          style={{ color: colors.gold }}
+        >
+        </p>
+
+        <h1 className="text-5xl md:text-8xl leading-tight font-light">
+          Premium
+          <br />
+          Indonesian
+          <br />
+          <span style={{ color: colors.gold }}>
+            Spice Exports
+          </span>
+        </h1>
+
+        <p className="mt-8 text-lg text-white/90 max-w-2xl">
+          Connecting Indonesia’s finest agricultural products
+          with global markets through trusted sourcing and
+          export partnerships.
+        </p>
+
+        <div className="flex gap-4 mt-10 flex-wrap">
+
+          <a
+            href="mailto:info@delvoraorigins.com?subject=Catalogue Request"
+            className="px-8 py-4 rounded-xl text-white font-semibold inline-block"
+            style={{ backgroundColor: colors.gold }}
+          >
+            Request Catalogue
+          </a>
+
+          <a
+            href="#contact"
+            className="px-8 py-4 rounded-xl border text-white inline-block"
+            style={{ borderColor: colors.gold }}
+          >
+            Contact Us
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  {/* ABOUT */}
+  <section
+    id="about"
+    className="py-28"
+    style={{ backgroundColor: colors.darkGreen }}
+  >
+    <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+
+        <p
+          className="uppercase tracking-[0.3em] mb-4"
+          style={{ color: colors.gold }}
+        >
+          About Delvora Origins
+        </p>
+
+        <h2 className="text-3xl text-white font-light leading-tight">
+          Connecting Indonesian Origins
+          With Global Demand
+        </h2>
+
+        <div
+          className="w-24 h-[2px] my-8"
+          style={{ backgroundColor: colors.gold }}
         />
 
-        <div className="absolute inset-0 bg-[#03150D]/70" />
+        <p className="text-white/80 text-lg">
+          Delvora Origins delivers premium Indonesian spices
+          and agricultural commodities through responsible
+          sourcing and strict quality control.
+        </p>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-10 h-full flex items-center">
+      </div>
 
-          <div className="max-w-2xl text-white">
+      <div className="grid grid-cols-2 gap-5">
 
-            <h1 className="text-7xl leading-tight font-light">
-              Premium Indonesian
-              <br />
-              Spices for
-              <br />
-              <span className="text-[#D4AF37]">
-                Global Markets
-              </span>
-            </h1>
+        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>20+</h3>
+          <p className="text-white/80">Farming Regions</p>
+        </div>
 
-            <p className="mt-6 text-xl text-gray-200">
-              Connecting the richness of Indonesia's natural origins
-              with partners worldwide.
+        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>15+</h3>
+          <p className="text-white/80">Export Markets</p>
+        </div>
+
+        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>100%</h3>
+          <p className="text-white/80">Quality Control</p>
+        </div>
+
+        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>Premium</h3>
+          <p className="text-white/80">Export Grade</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  {/* PRODUCTS */}
+  <section id="products" className="py-28">
+    <div className="max-w-7xl mx-auto px-6">
+
+      <div className="text-center mb-16">
+        <p className="uppercase tracking-[0.3em]" style={{ color: colors.gold }}>
+          Premium Selection
+        </p>
+
+        <h2 className="text-5xl mt-4" style={{ color: colors.textDark }}>
+          Our Products
+        </h2>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-10">
+
+        <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+          <Image
+            src="/cinnamon.jpeg"
+            alt="Cinnamon"
+            width={800}
+            height={600}
+            className="w-full h-[420px] object-cover"
+          />
+
+          <div className="p-8">
+            <h3 className="text-3xl mb-4" style={{ color: colors.darkGreen }}>
+              Cinnamon
+            </h3>
+
+            <p className="text-gray-600">
+              Premium Indonesian cinnamon sourced from trusted farming communities.
             </p>
-
-            <div className="flex gap-4 mt-10">
-              <button className="bg-[#D4AF37] text-black px-8 py-4">
-                Request Catalogue
-              </button>
-
-              <button className="border border-[#D4AF37] px-8 py-4">
-                Contact Us
-              </button>
-            </div>
-
           </div>
-
-        </div>
-      </section>
-
-      {/* PRODUCTS */}
-      <section className="py-24">
-
-        <div className="max-w-7xl mx-auto px-8">
-
-          <h2 className="text-center text-4xl text-[#0A1C12] mb-12">
-            OUR PRODUCTS
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-
-            {/* Cinnamon */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-
-              <Image
-                src="/cinnamon.jpg"
-                alt="Cinnamon"
-                width={800}
-                height={600}
-                className="w-full h-[320px] object-cover"
-              />
-
-              <div className="p-8">
-
-                <h3 className="text-3xl text-[#0A1C12]">
-                  CINNAMON
-                </h3>
-
-                <p className="mt-4 text-gray-700">
-                  Cassia Cinnamon in various grades and specifications
-                  to meet global market standards.
-                </p>
-
-              </div>
-            </div>
-
-            {/* Vanilla */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-
-              <Image
-                src="/vanilla.jpg"
-                alt="Vanilla"
-                width={800}
-                height={600}
-                className="w-full h-[320px] object-cover"
-              />
-
-              <div className="p-8">
-
-                <h3 className="text-3xl text-[#0A1C12]">
-                  VANILLA
-                </h3>
-
-                <p className="mt-4 text-gray-700">
-                  Premium Indonesian vanilla beans with rich aroma,
-                  natural curing process and export quality.
-                </p>
-
-              </div>
-            </div>
-
-          </div>
-
         </div>
 
-      </section>
+        <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+          <Image
+            src="/vanilla.jpeg"
+            alt="Vanilla"
+            width={800}
+            height={600}
+            className="w-full h-[420px] object-cover"
+          />
 
-    </main>
-  );
+          <div className="p-8">
+            <h3 className="text-3xl mb-4" style={{ color: colors.darkGreen }}>
+              Vanilla
+            </h3>
+
+            <p className="text-gray-600">
+              Carefully selected Indonesian vanilla beans with export quality standards.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  {/* ARTICLES */}
+
+<section id="articles" className="py-28 bg-[#faf8f2]">
+
+  <div className="max-w-7xl mx-auto px-6">
+
+<div className="text-center mb-16">
+  <p
+    className="uppercase tracking-[0.3em]"
+    style={{ color: colors.gold }}
+  >
+    Knowledge & Insights
+  </p>
+
+  <h2 className="text-5xl mt-4">
+    Articles
+  </h2>
+</div>
+
+<div className="grid md:grid-cols-3 gap-8">
+
+  <a
+    href="/articles/cinnamon-export-guide"
+    className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition"
+  >
+    <h3 className="text-2xl mb-4">
+      Indonesian Cinnamon Export Guide
+    </h3>
+
+    <p className="text-gray-600">
+      Indonesian cinnamon remains one of the most sought-after spices worldwide.
+    </p>
+
+    <p className="mt-6 font-semibold" style={{ color: colors.gold }}>
+      Read Article →
+    </p>
+  </a>
+
+  <a
+    href="/articles/vanilla-bean-grades"
+    className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition"
+  >
+    <h3 className="text-2xl mb-4">
+      Understanding Vanilla Bean Grades
+    </h3>
+
+    <p className="text-gray-600">
+      Learn how vanilla beans are classified for international trade.
+    </p>
+
+    <p className="mt-6 font-semibold" style={{ color: colors.gold }}>
+      Read Article →
+    </p>
+  </a>
+
+  <a
+    href="/articles/export-quality-control-process"
+    className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition"
+  >
+    <h3 className="text-2xl mb-4">
+      Export Quality Control Process
+    </h3>
+
+    <p className="text-gray-600">
+      Discover how quality is maintained from sourcing to shipment.
+    </p>
+
+    <p className="mt-6 font-semibold" style={{ color: colors.gold }}>
+      Read Article →
+    </p>
+  </a>
+
+</div>
+
+  </div>
+
+</section>
+
+
+  {/* CONTACT */}
+  <section id="contact" className="py-28 bg-white">
+
+    <div className="max-w-3xl mx-auto px-6">
+
+      <div className="text-center mb-12">
+        <p className="uppercase tracking-[0.3em]" style={{ color: colors.gold }}>
+          Get In Touch
+        </p>
+
+        <h2 className="text-5xl mt-4" style={{ color: colors.textDark }}>
+          Contact Us
+        </h2>
+      </div>
+
+      <form className="space-y-5">
+
+        <input type="text" placeholder="Your Name" className="w-full border border-gray-300 rounded-xl p-4" />
+
+        <input type="email" placeholder="Your Email" className="w-full border border-gray-300 rounded-xl p-4" />
+
+        <input type="text" placeholder="Company Name" className="w-full border border-gray-300 rounded-xl p-4" />
+
+        <textarea rows={6} placeholder="Tell us about your requirements..." className="w-full border border-gray-300 rounded-xl p-4" />
+
+        <button
+          type="submit"
+          className="px-8 py-4 rounded-xl text-white font-semibold"
+          style={{ backgroundColor: colors.gold }}
+        >
+          Send Inquiry
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  {/* FOOTER */}
+  <footer
+    className="py-16 text-white"
+    style={{ backgroundColor: "#05110b" }}
+  >
+    <div className="max-w-7xl mx-auto px-6">
+
+      <div className="flex flex-col md:flex-row justify-between gap-10">
+
+        <div>
+          <h3 className="text-3xl" style={{ color: colors.gold }}>
+            Delvora Origins
+          </h3>
+
+          <p className="mt-4 text-white/60 max-w-md">
+            Premium Indonesian spices and agricultural commodities for global markets.
+          </p>
+        </div>
+
+        <div>
+          <p className="text-white/70">
+            info@delvoraorigins.com
+          </p>
+
+          <p className="mt-2 text-white/70">
+            Indonesia
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+</main>
+
+);
 }
