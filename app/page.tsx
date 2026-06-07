@@ -269,11 +269,10 @@ return (
           <div className="space-y-2 text-sm text-gray-700">
 
             <p><strong>Origin:</strong> Indonesia</p>
-            <p><strong>Grade:</strong> Gourmet Grade, Extract Grade</p>
-            <p><strong>Moisture:</strong> 25–35%</p>
             <p><strong>Length:</strong> 12–20 cm</p>
+            <p><strong>Moisture:</strong> 25–35%</p>
             <p><strong>Packaging:</strong> Vacuum packed to help maintain product quality and aroma during transportation</p>
-            <p><strong>Supply Capacity:</strong> Seasonal Availability</p>
+            <p><strong>Available Grades:</strong> Gourmet Grade, Extract Grade</p>
 
           </div>
 
