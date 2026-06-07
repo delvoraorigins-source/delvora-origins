@@ -78,12 +78,12 @@ return (
         </p>
 
         <h1 className="text-5xl md:text-8xl leading-tight font-light">
-          Premium
-          <br />
           Indonesian
           <br />
+          Spice Sourcing &
+          <br />
           <span style={{ color: colors.gold }}>
-            Spice Exports
+            Exports
           </span>
         </h1>
 
@@ -146,9 +146,8 @@ return (
         />
 
         <p className="text-white/80 text-lg">
-          Delvora Origins delivers premium Indonesian spices
-          and agricultural commodities through responsible
-          sourcing and strict quality control.
+          Delvora Origins specializes in sourcing and exporting Indonesian spices and agricultural products. 
+          We work closely with trusted suppliers to deliver quality products and reliable export solutions for international markets.
         </p>
 
       </div>
@@ -156,23 +155,23 @@ return (
       <div className="grid grid-cols-2 gap-5">
 
         <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>20+</h3>
-          <p className="text-white/80">Farming Regions</p>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🌿</h3>
+          <p className="text-white/80">Indonesian Origins</p>
         </div>
 
         <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>15+</h3>
-          <p className="text-white/80">Export Markets</p>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🤝</h3>
+          <p className="text-white/80">Trusted Suppliers</p>
         </div>
 
         <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>100%</h3>
-          <p className="text-white/80">Quality Control</p>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>📋</h3>
+          <p className="text-white/80">Quality Commitment</p>
         </div>
 
         <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>Premium</h3>
-          <p className="text-white/80">Export Grade</p>
+          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🌍</h3>
+          <p className="text-white/80">Global Connection</p>
         </div>
 
       </div>
