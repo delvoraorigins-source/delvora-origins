@@ -223,8 +223,8 @@ return (
           </h3>
 
           <p className="text-gray-600 mb-6">
-            Premium Indonesian cinnamon sourced from selected farming regions
-            and prepared according to export standards for international markets.
+            Indonesian cinnamon sourced from carefully selected suppliers and farming communities.
+            Available in various grades and forms to meet international food, beverage, and industrial requirements.
           </p>
 
           <div className="space-y-2 text-sm text-gray-700">
@@ -263,8 +263,8 @@ return (
           </h3>
 
           <p className="text-gray-600 mb-6">
-            Carefully selected Indonesian vanilla beans with rich aroma,
-            premium quality, and export-grade processing standards.
+            Indonesian vanilla beans sourced from trusted farmers, known from their rich aroma and natural flavor.
+            Suitable for food manufacturing, extraction, and culinary applications.
           </p>
 
           <div className="space-y-2 text-sm text-gray-700">
@@ -432,6 +432,10 @@ return (
 
           <p className="mt-2 text-white/70">
             📍 Yogyakarta, Indonesia
+          </p>
+
+          <p className="mt-2 text-white/70">
+            +62-8179082023
           </p>
         </div>
 
