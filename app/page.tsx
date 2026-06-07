@@ -232,7 +232,7 @@ return (
             <p><strong>Type:</strong> Cassia Cinnamon, Ceylon Cinnamon</p>
             <p><strong>Product Form:</strong> Cinnamon Sticks, Broken Stick Cinnamon, Cinnamon Cut</p>
             <p><strong>Moisture:</strong> 10%-13%</p>
-            <p><strong>Packaging:</strong> Export Packing</p>
+            <p><strong>Packaging:</strong> Export-grade packaging available according to product specifications</p>
             <p><strong>Available Grades:</strong> AA, A, KA, KB, KC</p>
 
           </div>
@@ -272,7 +272,7 @@ return (
             <p><strong>Grade:</strong> Gourmet Grade, Extract Grade</p>
             <p><strong>Moisture:</strong> 25–35%</p>
             <p><strong>Length:</strong> 12–20 cm</p>
-            <p><strong>Packaging:</strong> Vacuum Packed</p>
+            <p><strong>Packaging:</strong> Vacuum packed to help maintain product quality and aroma during transportation</p>
             <p><strong>Supply Capacity:</strong> Seasonal Availability</p>
 
           </div>
