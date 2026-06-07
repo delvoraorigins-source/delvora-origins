@@ -185,7 +185,7 @@ return (
 
       <div className="text-center mb-16">
         <p className="uppercase tracking-[0.3em]" style={{ color: colors.gold }}>
-          Premium Selection
+          Selected Indonesian Spices
         </p>
 
         <h2 className="text-5xl mt-4" style={{ color: colors.textDark }}>
@@ -196,49 +196,76 @@ return (
       <div className="grid md:grid-cols-2 gap-10">
 
         <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
-          <Image
-            src="/cinnamon.jpeg"
-            alt="Cinnamon"
-            width={800}
-            height={600}
-            className="w-full h-[420px] object-cover"
-          />
+  <Image
+    src="/cinnamon.jpeg"
+    alt="Cinnamon"
+    width={800}
+    height={600}
+    className="w-full h-[420px] object-cover"
+  />
 
-          <div className="p-8">
-            <h3 className="text-3xl mb-4" style={{ color: colors.darkGreen }}>
-              Cinnamon
-            </h3>
+  <div className="p-8">
 
-            <p className="text-gray-600">
-              Premium Indonesian cinnamon sourced from trusted farming communities.
-            </p>
-          </div>
-        </div>
+    <h3
+      className="text-3xl mb-4"
+      style={{ color: colors.darkGreen }}
+    >
+      Indonesian Cinnamon
+    </h3>
 
-        <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
-          <Image
-            src="/vanilla.jpeg"
-            alt="Vanilla"
-            width={800}
-            height={600}
-            className="w-full h-[420px] object-cover"
-          />
+    <p className="text-gray-600 mb-6">
+      Premium Indonesian cinnamon sourced from selected farming regions and prepared according to export standards.
+    </p>
 
-          <div className="p-8">
-            <h3 className="text-3xl mb-4" style={{ color: colors.darkGreen }}>
-              Vanilla
-            </h3>
+    <div className="space-y-2 text-sm text-gray-700">
 
-            <p className="text-gray-600">
-              Carefully selected Indonesian vanilla beans with export quality standards.
-            </p>
-          </div>
-        </div>
-
-      </div>
+      <p><strong>Origin:</strong> Indonesia</p>
+      <p><strong>Type:</strong> Cassia & Ceylon Cinnamon</p>
+      <p><strong>Form:</strong> Cinnamon Stick, Broken Stick Cinnamon, & Cinnamon Cut/</p>
+      <p><strong>Moisture:</strong> 10% - 13%</p>
+      <p><strong>Packaging:</strong> Export Packing</p>
+      <p><strong>Available Grades:</strong> AA, A, KA, KB, KC</p>
 
     </div>
-  </section>
+
+  </div>
+</div>
+        
+        <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+  <Image
+    src="/vanilla.jpeg"
+    alt="Vanilla"
+    width={800}
+    height={600}
+    className="w-full h-[420px] object-cover"
+  />
+
+  <div className="p-8">
+
+    <h3
+      className="text-3xl mb-4"
+      style={{ color: colors.darkGreen }}
+    >
+      Indonesian Vanilla Beans
+    </h3>
+
+    <p className="text-gray-600 mb-6">
+      Carefully selected Indonesian vanilla beans with rich aroma and export-grade quality.
+    </p>
+
+    <div className="space-y-2 text-sm text-gray-700">
+
+      <p><strong>Origin:</strong> Indonesia</p>
+      <p><strong>Grade:</strong> Gourmet Grade, Extract Grade</p>
+      <p><strong>Moisture:</strong> 25–35%</p>
+      <p><strong>Length:</strong> 12–20 cm</p>
+      <p><strong>Packaging:</strong> Vacuum Packed</p>
+      <p><strong>Supply Capacity:</strong> Seasonal Availability</p>
+
+    </div>
+
+  </div>
+</section>
 
   {/* ARTICLES */}
 
