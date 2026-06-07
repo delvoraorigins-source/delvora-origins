@@ -431,11 +431,11 @@ return (
           </p>
 
           <p className="mt-2 text-white/70">
-            📍 Yogyakarta, Indonesia
+            Yogyakarta, Indonesia
           </p>
 
           <p className="mt-2 text-white/70">
-            +62-8179082023
+            +62-8179-08-2023
           </p>
         </div>
 
