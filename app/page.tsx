@@ -88,9 +88,8 @@ return (
         </h1>
 
         <p className="mt-8 text-lg text-white/90 max-w-2xl">
-          Connecting Indonesia’s finest agricultural products
-          with global markets through trusted sourcing and
-          export partnerships.
+          Connecting carefully selected Indonesian spices and agricultural commodities 
+          with global buyers through trusted sourcing and export solutions.
         </p>
 
         <div className="flex gap-4 mt-10 flex-wrap">
