@@ -362,7 +362,7 @@ return (
   {/* FOOTER */}
   <footer
     className="py-16 text-white"
-    style={{ backgroundColor: "#0b2819" }}
+    style={{ backgroundColor: "#071c12" }}
   >
     <div className="max-w-7xl mx-auto px-6">
 
