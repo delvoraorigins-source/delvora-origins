@@ -154,22 +154,22 @@ return (
 
       <div className="grid grid-cols-2 gap-5">
 
-        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
           <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🌿</h3>
           <p className="text-white/80">Indonesian Origins</p>
         </div>
 
-        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
           <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🤝</h3>
           <p className="text-white/80">Trusted Suppliers</p>
         </div>
 
-        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
           <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>📋</h3>
           <p className="text-white/80">Quality Commitment</p>
         </div>
 
-        <div className="p-8 rounded-2xl" style={{ backgroundColor: colors.forestGreen }}>
+        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
           <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🌍</h3>
           <p className="text-white/80">Global Connection</p>
         </div>
@@ -373,7 +373,7 @@ return (
           </h3>
 
           <p className="mt-4 text-white/60 max-w-md">
-            Premium Indonesian spices and agricultural commodities for global markets.
+            Finest Indonesian spices and agricultural commodities for global markets.
           </p>
         </div>
 
@@ -383,7 +383,7 @@ return (
           </p>
 
           <p className="mt-2 text-white/70">
-            Indonesia
+            📍 Yogyakarta, Indonesia
           </p>
         </div>
 
