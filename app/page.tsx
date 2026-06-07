@@ -100,7 +100,7 @@ return (
             className="px-8 py-4 rounded-xl text-white font-semibold inline-block"
             style={{ backgroundColor: colors.gold }}
           >
-            Request Catalogue
+            Request Catalog
           </a>
 
           <a
@@ -362,7 +362,7 @@ return (
   {/* FOOTER */}
   <footer
     className="py-16 text-white"
-    style={{ backgroundColor: "#05110b" }}
+    style={{ backgroundColor: "#0b2819" }}
   >
     <div className="max-w-7xl mx-auto px-6">
 
