@@ -77,7 +77,7 @@ return (
         >
         </p>
 
-        <h1 className="text-5xl md:text-7xl leading-tight font-light">
+        <h1 className="text-5xl md:text-8xl leading-tight font-light">
           Indonesian
           <br />
           Spice Sourcing &
