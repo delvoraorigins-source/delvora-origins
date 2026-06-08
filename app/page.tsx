@@ -31,7 +31,7 @@ return (
     <div className="absolute top-5 left-8 right-8 z-[9999] flex justify-between items-start">
 
       <Image
-        src="/Logo_Delvora.jpeg"
+        src="/Logo_Delvora2.jpeg"
         alt="Logo"
         width={200}
         height={200}
