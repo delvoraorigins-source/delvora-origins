@@ -28,7 +28,7 @@ return (
     <div className="absolute inset-0 bg-black/60" />
 
     {/* HEADER */}
-    <div className="absolute top-5 left-8 right-8 z-[9999] flex justify-between items-start">
+    <div className="absolute top-5 left-4 right-8 z-[9999] flex justify-between items-start">
 
       <Image
         src="/Logo_Delvora2.png"
