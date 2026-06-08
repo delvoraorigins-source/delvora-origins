@@ -390,7 +390,7 @@ return (
     </div>
 
     <p className="text-center mt-6 text-sm text-gray-500">
-      ← Swipe or scroll horizontally to explore more articles →
+      ← Swipe for more →
     </p>
 
   </div>
