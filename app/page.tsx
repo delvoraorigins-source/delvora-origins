@@ -68,7 +68,7 @@ return (
     </div>
 
     {/* TEXT */}
-    <div className="relative z-10 flex items-center min-h-screen px-6">
+    <div className="relative z-10 flex items-center min-h-screen px-6 pt-24">
       <div className="max-w-3xl text-white">
 
         <p
@@ -433,7 +433,7 @@ return (
           </p>
 
           <p className="mt-2 text-white/70">
-            +62-8179-08-2023
+            +62-8191-880-8008
           </p>
         </div>
 
