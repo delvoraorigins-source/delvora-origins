@@ -21,7 +21,7 @@ return ( <main className="max-w-3xl mx-auto px-6 py-24">
     spice trade.
   </p>
 
-  <p className="mb-6 text-gray-700 leading-6">
+  <p className="mb-6 text-gray-700 leading-8">
     As demand for natural ingredients and premium spices continues to grow,
     Indonesian cinnamon remains a preferred choice for food manufacturers,
     wholesalers, distributors, and industrial buyers seeking consistent
