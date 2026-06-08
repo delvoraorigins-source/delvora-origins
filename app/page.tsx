@@ -68,7 +68,7 @@ return (
     </div>
 
     {/* TEXT */}
-    <div className="relative z-10 flex items-center min-h-screen px-6 pt-10">
+    <div className="relative z-10 flex items-center min-h-screen px-6">
       <div className="max-w-3xl text-white">
 
         <p
