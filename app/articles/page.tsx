@@ -26,7 +26,7 @@ Articles </h1>
     </a>
 
     <a
-      href="/articles/ceylon-vs-cassia-cinnamon"
+      href="/articles/ceylon-cinnamon-vs-cassia-cinnamon"
       className="block border p-6 rounded-xl"
     >
       Ceylon Cinnamon vs Cassia Cinnamon
