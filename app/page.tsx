@@ -153,23 +153,23 @@ return (
 
       <div className="grid grid-cols-2 gap-5">
 
-        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🌿</h3>
+        <div className="p-8 rounded-3xl text-center" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-3xl mb-2" style={{ color: colors.gold }}>🌿</h3>
           <p className="text-white/80">Indonesian Origins</p>
         </div>
 
-        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🤝</h3>
+        <div className="p-8 rounded-3xl text-center" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-3xl mb-2" style={{ color: colors.gold }}>🤝</h3>
           <p className="text-white/80">Trusted Suppliers</p>
         </div>
 
-        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>📋</h3>
+        <div className="p-8 rounded-3xl text-center" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-3xl mb-2" style={{ color: colors.gold }}>📋</h3>
           <p className="text-white/80">Quality Commitment</p>
         </div>
 
-        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: colors.forestGreen }}>
-          <h3 className="text-2xl mb-2" style={{ color: colors.gold }}>🌍</h3>
+        <div className="p-8 rounded-3xl text-center" style={{ backgroundColor: colors.forestGreen }}>
+          <h3 className="text-3xl mb-2" style={{ color: colors.gold }}>🌍</h3>
           <p className="text-white/80">Global Connection</p>
         </div>
 
