@@ -286,7 +286,7 @@ return (
 </section>
 
 
-  {/* ARTICLES */}
+{/* ARTICLES */}
 
 <section id="articles" className="py-28 bg-[#faf8f2]">
 
@@ -368,7 +368,7 @@ return (
       </a>
 
       <a
-        href="/articles/ceylon-vs-cassia-cinnamon"
+        href="/articles/ceylon-cinnamon-vs-cassia-cinnamon"
         className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition min-w-[350px]"
       >
         <h3 className="text-2xl mb-4">
@@ -388,6 +388,10 @@ return (
       </a>
 
     </div>
+
+    <p className="text-center mt-6 text-sm text-gray-500">
+      ← Swipe or scroll horizontally to explore more articles →
+    </p>
 
   </div>
 
