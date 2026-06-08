@@ -25,6 +25,13 @@ Articles </h1>
       Export Quality Control Process
     </a>
 
+    <a
+      href="/articles/ceylon-vs-cassia-cinnamon"
+      className="block border p-6 rounded-xl"
+    >
+      Ceylon Cinnamon vs Cassia Cinnamon
+    </a>
+
   </div>
 </main>
 

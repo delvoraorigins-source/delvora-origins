@@ -292,73 +292,102 @@ return (
 
   <div className="max-w-7xl mx-auto px-6">
 
-<div className="text-center mb-16">
-  <p
-    className="uppercase tracking-[0.3em]"
-    style={{ color: colors.gold }}
-  >
-    Knowledge & Insights
-  </p>
+    <div className="text-center mb-16">
+      <p
+        className="uppercase tracking-[0.3em]"
+        style={{ color: colors.gold }}
+      >
+        Knowledge & Insights
+      </p>
 
-  <h2 className="text-5xl mt-4">
-    Articles
-  </h2>
-</div>
+      <h2 className="text-5xl mt-4">
+        Articles
+      </h2>
+    </div>
 
-<div className="grid md:grid-cols-3 gap-8">
+    <div className="flex gap-8 overflow-x-auto pb-4">
 
-  <a
-    href="/articles/cinnamon-export-guide"
-    className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition"
-  >
-    <h3 className="text-2xl mb-4">
-      Indonesian Cinnamon Export Guide
-    </h3>
+      <a
+        href="/articles/cinnamon-export-guide"
+        className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition min-w-[350px]"
+      >
+        <h3 className="text-2xl mb-4">
+          Indonesian Cinnamon Export Guide
+        </h3>
 
-    <p className="text-gray-600">
-      Indonesian cinnamon remains one of the most sought-after spices worldwide.
-    </p>
+        <p className="text-gray-600">
+          Indonesian cinnamon remains one of the most sought-after spices worldwide.
+        </p>
 
-    <p className="mt-6 font-semibold" style={{ color: colors.gold }}>
-      Read Article →
-    </p>
-  </a>
+        <p
+          className="mt-6 font-semibold"
+          style={{ color: colors.gold }}
+        >
+          Read Article →
+        </p>
+      </a>
 
-  <a
-    href="/articles/vanilla-bean-grades"
-    className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition"
-  >
-    <h3 className="text-2xl mb-4">
-      Understanding Vanilla Bean Grades
-    </h3>
+      <a
+        href="/articles/vanilla-bean-grades"
+        className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition min-w-[350px]"
+      >
+        <h3 className="text-2xl mb-4">
+          Understanding Vanilla Bean Grades
+        </h3>
 
-    <p className="text-gray-600">
-      Learn how vanilla beans are classified for international trade.
-    </p>
+        <p className="text-gray-600">
+          Learn how vanilla beans are classified for international trade.
+        </p>
 
-    <p className="mt-6 font-semibold" style={{ color: colors.gold }}>
-      Read Article →
-    </p>
-  </a>
+        <p
+          className="mt-6 font-semibold"
+          style={{ color: colors.gold }}
+        >
+          Read Article →
+        </p>
+      </a>
 
-  <a
-    href="/articles/export-quality-control-process"
-    className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition"
-  >
-    <h3 className="text-2xl mb-4">
-      Export Quality Control Process
-    </h3>
+      <a
+        href="/articles/export-quality-control-process"
+        className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition min-w-[350px]"
+      >
+        <h3 className="text-2xl mb-4">
+          Export Quality Control Process
+        </h3>
 
-    <p className="text-gray-600">
-      Discover how quality is maintained from sourcing to shipment.
-    </p>
+        <p className="text-gray-600">
+          Discover how quality is maintained from sourcing to shipment.
+        </p>
 
-    <p className="mt-6 font-semibold" style={{ color: colors.gold }}>
-      Read Article →
-    </p>
-  </a>
+        <p
+          className="mt-6 font-semibold"
+          style={{ color: colors.gold }}
+        >
+          Read Article →
+        </p>
+      </a>
 
-</div>
+      <a
+        href="/articles/ceylon-vs-cassia-cinnamon"
+        className="bg-white rounded-3xl p-8 shadow-lg block hover:shadow-2xl transition min-w-[350px]"
+      >
+        <h3 className="text-2xl mb-4">
+          Ceylon Cinnamon vs Cassia Cinnamon
+        </h3>
+
+        <p className="text-gray-600">
+          Understand the differences in appearance, flavor, and health considerations.
+        </p>
+
+        <p
+          className="mt-6 font-semibold"
+          style={{ color: colors.gold }}
+        >
+          Read Article →
+        </p>
+      </a>
+
+    </div>
 
   </div>
 
