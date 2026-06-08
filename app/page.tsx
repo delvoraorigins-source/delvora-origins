@@ -33,8 +33,8 @@ return (
       <Image
         src="/Logo_Delvora2.png"
         alt="Logo"
-        width={200}
-        height={200}
+        width={260}
+        height={260}
         className="object-contain"
       />
 
