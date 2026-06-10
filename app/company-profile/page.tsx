@@ -417,7 +417,7 @@ export default function CompanyProfile() {
       }}
     >
       <img
-        src="/cinnamon-3.jpEg"
+        src="/cinnamon-3.jpeg"
         alt="Hero"
         style={{
           width: "100%",
