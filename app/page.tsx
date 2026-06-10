@@ -113,7 +113,7 @@ return (
           <a
             href="/company-profile"
             className="px-8 py-4 rounded-xl border border text-white"
-            style={{ borderColor: colors.forestGreen }}
+            style={{ borderColor: colors.gold }}
           >
             Company Profile
           </a>
