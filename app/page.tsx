@@ -112,7 +112,7 @@ return (
 
           <a
             href="/company-profile"
-            className="px-8 py-4 rounded-2xl border border-white text-white"
+            className="px-8 py-4 rounded-2xl border border-darkGreen text-white"
           >
             Company Profile
           </a>
