@@ -112,8 +112,8 @@ return (
 
           <a
             href="/company-profile"
-            className="px-8 py-4 rounded-2xl border border text-white"
-            style={{ borderColor: colors.darkGreen }}
+            className="px-8 py-4 rounded-xl border border text-white"
+            style={{ borderColor: colors.forestGreen }}
           >
             Company Profile
           </a>
