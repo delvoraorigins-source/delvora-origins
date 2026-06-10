@@ -131,7 +131,208 @@ export default function CompanyProfile() {
         </div>
       </main>
 
-      {/* PAGE 2 */}
+    
+    {/* PAGE 2 */}
+
+<section
+  style={{
+    height: "100vh",
+    background: "#e1dacb",
+    position: "relative",
+    overflow: "hidden",
+    padding: "70px 90px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+  }}
+>
+  {/* GOLD WATERMARK */}
+  <div
+    style={{
+      position: "absolute",
+      top: "-150px",
+      right: "-150px",
+      width: "500px",
+      height: "500px",
+      borderRadius: "50%",
+      background: "rgba(212,175,55,0.08)",
+      filter: "blur(120px)",
+      zIndex: 0,
+    }}
+  />
+
+  {/* HEADER */}
+  <div
+    style={{
+      textAlign: "center",
+      marginBottom: "70px",
+      position: "relative",
+      zIndex: 2,
+    }}
+  >
+    <p
+      style={{
+        color: "#7a6627",
+        letterSpacing: "6px",
+        fontSize: "18px",
+        marginBottom: "20px",
+      }}
+    >
+      VISION & MISSION
+    </p>
+
+    <div
+      style={{
+        width: "90px",
+        height: "2px",
+        background: "#7a6627",
+        margin: "0 auto 35px",
+      }}
+    />
+
+    <h2
+      style={{
+        color: "#10341d",
+        fontSize: "50px",
+        lineHeight: "1.5",
+        fontFamily: "Georgia, serif",
+        margin: 0,
+      }}
+    >
+      Building Trusted & Sustainable
+      <br /> 
+      Global Partnerships
+    </h2>
+  </div>
+
+  {/* CONTENT */}
+  <div
+    style={{
+      display: "flex",
+      alignItems: "stretch",
+      gap: "20px",
+      position: "relative",
+      zIndex: 2,
+    }}
+  >
+    {/* VISION */}
+    <div
+      style={{
+        flex: 1,
+        background: "#edebe6",
+        borderRadius: "28px",
+        padding: "50px",
+        boxShadow: "0 20px 50px rgba(0,0,0,0.06)",
+      }}
+    >
+      <div
+        style={{
+          color: "#D4AF37",
+          fontSize: "42px",
+          marginBottom: "20px",
+        }}
+      >
+        ✦
+      </div>
+
+      <h3
+        style={{
+          color: "#755623",
+          fontSize: "34px",
+          fontFamily: "Georgia, serif",
+          marginBottom: "25px",
+          marginTop: 0,
+        }}
+      >
+        Vision
+      </h3>
+
+      <p
+        style={{
+          color: "#7e6e17",
+          fontSize: "18px",
+          lineHeight: "1.9",
+          textAlign: "justify",
+          margin: 0,
+        }}
+      >
+        To be a trusted global partner, bringing Indonesia's finest 
+        natural products to the world through 
+        quality, integrity, and sustainability.
+      </p>
+    </div>
+
+    {/* CENTER LOGO */}
+    <div
+      style={{
+        width: "80px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <img
+        src="/Logo_Delvora2.png"
+        alt="Delvora"
+        style={{
+          width: "160px",
+          opacity: 0.15,
+        }}
+      />
+    </div>
+
+    {/* MISSION */}
+    <div
+      style={{
+        flex: 1,
+        background: "#0e301a",
+        borderRadius: "28px",
+        padding: "35px",
+        boxShadow: "0 20px 50px rgba(0,0,0,0.12)",
+      }}
+    >
+      <div
+        style={{
+          color: "#c7a625",
+          fontSize: "40px",
+          marginBottom: "20px",
+        }}
+      >
+        ✦
+      </div>
+
+      <h3
+        style={{
+          color: "#F5F0E6",
+          fontSize: "34px",
+          fontFamily: "Georgia, serif",
+          marginBottom: "25px",
+          marginTop: 0,
+        }}
+      >
+        Mission
+      </h3>
+
+      <ul
+        style={{
+          color: "#D8D2C7",
+          fontSize: "18px",
+          lineHeight: "2",
+          paddingLeft: "0px",
+          margin: 0,
+        }}
+      >
+        <li>• Deliver premium-quality Indonesian vanilla and cinnamon.</li>
+        <li>• Build long-term and transparent relationships with buyers.</li>
+        <li>• Support responsible and sustainable sourcing practices.</li>
+        <li>• Promote Indonesian excellence worldwide.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+      {/* PAGE 3 */}
 
 <section
   style={{
@@ -429,7 +630,7 @@ export default function CompanyProfile() {
     </div>
   </section>
 
-      {/* PAGE 3 */}
+      {/* PAGE 4 */}
       <section
         style={{
           height: "100vh",
