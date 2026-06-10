@@ -1,268 +1,541 @@
 "use client";
 
-import Image from "next/image";
-
-const colors = {
-  darkGreen: "#071c12",
-  forestGreen: "#022b17",
-  cream: "#F5F1E8",
-  gold: "#c29027",
-  textDark: "#1F1F1F",
-};
-
 export default function CompanyProfile() {
   return (
-    <main style={{ backgroundColor: colors.cream }}>
-
-      {/* HERO */}
-
-      <section className="relative h-[80vh] flex items-center">
-
-        <Image
-          src="/cinnamon-bg.jpeg"
-          alt="Delvora Origins"
-          fill
-          className="object-cover"
+    <>
+      {/* PAGE 1 */}
+      <main
+        style={{
+          height: "100vh",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage:
+              "linear-gradient(to right, rgba(0,0,0,0.88), rgba(0,0,0,0.45)), url('/cinnamon-hero.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         />
 
-        <div className="absolute inset-0 bg-black/55" />
-
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-white">
-
-          <Image
+        <div
+          style={{
+            position: "relative",
+            zIndex: 2,
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            paddingLeft: "90px",
+            maxWidth: "1400px",
+            transform: "translateY(-30px)",
+          }}
+        >
+          <img
             src="/Logo_Delvora2.png"
             alt="Delvora Origins"
-            width={260}
-            height={120}
-            className="mb-10"
+            style={{
+              width: "300px",
+              marginBottom: "30px",
+              marginLeft: "-28px",
+            }}
           />
 
-          <h1 className="text-5xl md:text-7xl font-light leading-tight">
-            Company Profile
-          </h1>
-
-          <p className="mt-6 text-xl max-w-2xl">
-            Connecting carefully selected Indonesian spices and
-            agricultural commodities with global buyers through
-            trusted sourcing and export solutions.
+          <p
+            style={{
+              color: "#D4AF37",
+              letterSpacing: "8px",
+              fontSize: "22px",
+              margin: 0,
+              marginBottom: "24px",
+            }}
+          >
+            COMPANY PROFILE
           </p>
 
-        </div>
-      </section>
-
-      {/* ABOUT */}
-
-      <section className="py-24 max-w-6xl mx-auto px-6">
-
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-
-          <div>
-            <h2
-              className="text-4xl mb-8"
-              style={{ color: colors.darkGreen }}
-            >
-              About Delvora Origins
-            </h2>
-
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Delvora Origins is an Indonesian sourcing and export
-              company focused on premium spices and agricultural
-              commodities. We work directly with trusted suppliers
-              and farming communities to ensure quality,
-              consistency, and reliable supply for international
-              buyers.
-            </p>
-          </div>
-
-          <Image
-            src="/cinnamon.jpeg"
-            alt="Cinnamon"
-            width={700}
-            height={500}
-            className="rounded-3xl shadow-xl"
+          <div
+            style={{
+              width: "90px",
+              height: "2px",
+              background: "#D4AF37",
+              marginBottom: "40px",
+            }}
           />
 
+          <h1
+            style={{
+              color: "#F8F6F2",
+              fontFamily: "Georgia, serif",
+              fontSize: "80px",
+              lineHeight: "1.05",
+              fontWeight: 500,
+              margin: 0,
+            }}
+          >
+            Premium Indonesian
+            <br />
+            Vanilla & Cinnamon
+          </h1>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginTop: "55px",
+            }}
+          >
+            <div
+              style={{
+                width: "90px",
+                height: "2px",
+                background: "#D4AF37",
+                marginRight: "25px",
+              }}
+            />
+
+            <p
+              style={{
+                color: "#F5F0E6",
+                fontSize: "24px",
+                margin: 0,
+              }}
+            >
+              Rooted in Nature, Growing Prosperity.
+            </p>
+
+            <div
+              style={{
+                width: "1px",
+                height: "28px",
+                background: "#D4AF37",
+                marginLeft: "25px",
+                marginRight: "25px",
+              }}
+            />
+
+            <p
+              style={{
+                color: "#D4AF37",
+                fontSize: "28px",
+                letterSpacing: "4px",
+                margin: 0,
+              }}
+            >
+              2026
+            </p>
+          </div>
+        </div>
+      </main>
+
+      {/* PAGE 2 */}
+
+<section
+  style={{
+    height: "100vh",
+    background: "#F5F0E6",
+    position: "relative",
+    overflow: "hidden",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "70px 90px",
+    gap: "60px",
+  }}
+>
+  {/* WATERMARK VANILLA */}
+  <div
+    style={{
+      position: "absolute",
+      top: "-120px",
+      right: "-120px",
+      width: "550px",
+      height: "550px",
+      backgroundImage: "url('/Vanilla_Background.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      opacity: 0.30,
+      filter:
+        "sepia(100%) saturate(400%) brightness(1.1) contrast(0.8)",
+      pointerEvents: "none",
+      zIndex: 0,
+    }}
+  />
+
+  {/* WATERMARK CINNAMON */}
+  <div
+    style={{
+      position: "absolute",
+      bottom: "-120px",
+      left: "-120px",
+      width: "500px",
+      height: "500px",
+      backgroundImage: "url('/Cinnamon_Background.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      opacity: 0.40,
+      filter:
+        "sepia(100%) saturate(400%) brightness(1.1) contrast(0.8)",
+      pointerEvents: "none",
+      zIndex: 0,
+    }}
+  />
+
+  {/* LEFT CONTENT */}
+  <div
+    style={{
+      flex: 1,
+      maxWidth: "700px",
+      position: "relative",
+      zIndex: 2,
+    }}
+  >
+    <p
+      style={{
+        color: "#bb9d3b",
+        letterSpacing: "6px",
+        fontSize: "18px",
+        marginBottom: "20px",
+        fontFamily: "Arial, sans-serif",
+      }}
+    >
+      ABOUT DELVORA
+    </p>
+
+    <div
+      style={{
+        width: "90px",
+        height: "2px",
+        background: "#D4AF37",
+        marginBottom: "35px",
+      }}
+    />
+
+    <h2
+      style={{
+        color: "#07120B",
+        fontSize: "60px",
+        lineHeight: "1.08",
+        margin: 0,
+        marginBottom: "30px",
+        fontFamily: "Georgia, serif",
+        fontWeight: 250,
+      }}
+    >
+      Bringing Indonesia's  
+      <br />
+      Natural Treasures to 
+      <br />
+      Global Market
+    </h2>
+
+    <p
+      style={{
+        color: "#555",
+        fontSize: "20px",
+        lineHeight: "1.8",
+        marginBottom: "50px",
+        fontFamily: "Arial, sans-serif",
+        textAlign: "justify",
+      }}
+    >
+      Delvora Origins is an Indonesian sourcing and export company
+      specializing in premium vanilla and cinnamon. We connect
+      international buyers with carefully selected products sourced
+      from trusted producers across Indonesia, ensuring quality,
+      consistency, and long-term partnerships.
+    </p>
+
+    {/* VALUE CARDS */}
+    <div
+      style={{
+        display: "flex",
+        gap: "20px",
+      }}
+    >
+      <div
+        style={{
+          padding: "24px",
+          background: "#fff",
+          borderRadius: "18px",
+          minWidth: "170px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
+        }}
+      >
+        <div
+          style={{
+            color: "#D4AF37",
+            fontSize: "34px",
+            marginBottom: "10px",
+            textAlign: "center",
+          }}
+        >
+          🌿
         </div>
 
-      </section>
+        <div
+          style={{
+            color: "#07120B",
+            lineHeight: "1.5",
+            textAlign: "center",
+          }}
+        >
+          Indonesia
+          <br />
+          Origin
+        </div>
+      </div>
 
-      {/* WHY INDONESIA */}
-
-      <section
-        className="py-24"
-        style={{ backgroundColor: "#ffffff" }}
+      <div
+        style={{
+          padding: "24px",
+          background: "#fff",
+          borderRadius: "18px",
+          minWidth: "170px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
+        }}
       >
+        <div
+          style={{
+            color: "#D4AF37",
+            fontSize: "34px",
+            marginBottom: "10px",
+            textAlign: "center",
+          }}
+        >
+          📋
+        </div>
 
-        <div className="max-w-6xl mx-auto px-6">
+        <div
+          style={{
+            color: "#07120B",
+            lineHeight: "1.5",
+            textAlign: "center",
+          }}
+        >
+          Quality
+          <br />
+          Commitment
+        </div>
+      </div>
+
+      <div
+        style={{
+          padding: "24px",
+          background: "#fff",
+          borderRadius: "18px",
+          minWidth: "170px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
+        }}
+      >
+        <div
+          style={{
+            color: "#D4AF37",
+            fontSize: "34px",
+            marginBottom: "10px",
+            textAlign: "center",
+          }}
+        >
+          🌍
+        </div>
+
+        <div
+          style={{
+            color: "#07120B",
+            lineHeight: "1.5",
+            textAlign: "center",
+          }}
+        >
+          Export
+          <br />
+          Ready
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* RIGHT SIDE IMAGES */}
+  <div
+    style={{
+      width: "42%",
+      height: "650px",
+      display: "grid",
+      gridTemplateColumns: "1.2fr 1fr",
+      gap: "18px",
+      position: "relative",
+      zIndex: 2,
+    }}
+  >
+    {/* LARGE LEFT IMAGE */}
+    <div
+      style={{
+        gridRow: "1 / span 2",
+        overflow: "hidden",
+        borderRadius: "24px",
+        boxShadow: "0 20px 50px rgba(0,0,0,0.12)",
+      }}
+    >
+      <img
+        src="/vanilla-2.jpeg"
+        alt="Vanilla"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
+    </div>
+
+    {/* TOP RIGHT */}
+    <div
+      style={{
+        overflow: "hidden",
+        borderRadius: "24px",
+        boxShadow: "0 20px 50px rgba(0,0,0,0.12)",
+      }}
+    >
+      <img
+        src="/cinnamon-2.jpeg"
+        alt="Cinnamon"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
+    </div>
+
+    {/* BOTTOM RIGHT */}
+    <div
+      style={{
+        overflow: "hidden",
+        borderRadius: "24px",
+        boxShadow: "0 20px 50px rgba(0,0,0,0.12)",
+      }}
+    >
+      <img
+        src="/cinnamon-3.jpEg"
+        alt="Hero"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+         }}
+        />
+      </div>
+    </div>
+  </section>
+
+      {/* PAGE 3 */}
+      <section
+        style={{
+          height: "100vh",
+          background: "#0c2214",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "70px 90px",
+          gap: "60px",
+        }}
+      >
+        <div
+          style={{
+            width: "28%",
+            height: "78%",
+            overflow: "hidden",
+            borderRadius: "28px",
+          }}
+        >
+          <img
+            src="/vanilla_bg.jpeg"
+            alt=""
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center",
+            maxWidth: "650px",
+          }}
+        >
+          <p
+            style={{
+              color: "#D4AF37",
+              letterSpacing: "6px",
+              fontSize: "18px",
+            }}
+          >
+            OUR PRODUCTS
+          </p>
+
+          <div
+            style={{
+              width: "90px",
+              height: "2px",
+              background: "#D4AF37",
+              margin: "25px auto 35px",
+            }}
+          />
 
           <h2
-            className="text-4xl text-center mb-14"
-            style={{ color: colors.darkGreen }}
+            style={{
+              color: "#F5F0E6",
+              fontSize: "45px",
+              lineHeight: "1.1",
+              fontFamily: "Georgia, serif",
+              margin: 0,
+              marginBottom: "40px",
+            }}
           >
-            Why Indonesia
+            Finest Indonesian
+            <br />
+            Vanilla & Cinnamon
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
-              <h3 className="text-2xl mb-4">
-                Rich Agricultural Heritage
-              </h3>
-
-              <p>
-                Indonesia is one of the world's leading producers
-                of cinnamon, vanilla, cloves, nutmeg, and many
-                other spices.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
-              <h3 className="text-2xl mb-4">
-                Diverse Growing Regions
-              </h3>
-
-              <p>
-                Multiple islands and climates allow consistent
-                production throughout the year.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
-              <h3 className="text-2xl mb-4">
-                Global Export Experience
-              </h3>
-
-              <p>
-                Indonesian spices have been traded internationally
-                for centuries and remain highly sought after.
-              </p>
-            </div>
-
-          </div>
-
+          <p
+            style={{
+              color: "#CFC8BB",
+              fontSize: "20px",
+              lineHeight: "1.9",
+              textAlign: "center",
+            }}
+          >
+            We carefully source our products from trusted regions 
+            across Indonesia, where generations of expertise and 
+            ideal growing conditions ensure exceptional quality. 
+            Each product is prepared to meet international standards, 
+            delivering reliability and consistency to global partners.
+          </p>
         </div>
 
-      </section>
-
-      {/* PRODUCTS */}
-
-      <section className="py-24 max-w-6xl mx-auto px-6">
-
-        <h2
-          className="text-4xl text-center mb-16"
-          style={{ color: colors.darkGreen }}
+        <div
+          style={{
+            width: "28%",
+            height: "78%",
+            overflow: "hidden",
+            borderRadius: "28px",
+          }}
         >
-          Product Portfolio
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-10">
-
-          <div className="rounded-3xl overflow-hidden shadow-xl">
-            <Image
-              src="/cinnamon-hero.jpg"
-              alt="Cinnamon"
-              width={700}
-              height={500}
-              className="w-full h-[300px] object-cover"
-            />
-            <div className="p-8 bg-white">
-              <h3 className="text-2xl mb-4">
-                Cinnamon
-              </h3>
-
-              <p>
-                Cassia cinnamon sourced from leading Indonesian
-                producing regions.
-              </p>
-            </div>
-          </div>
-
-          <div className="rounded-3xl overflow-hidden shadow-xl">
-            <Image
-              src="/vanilla_bg.jpeg"
-              alt="Vanilla"
-              width={700}
-              height={500}
-              className="w-full h-[300px] object-cover"
-            />
-            <div className="p-8 bg-white">
-              <h3 className="text-2xl mb-4">
-                Vanilla
-              </h3>
-
-              <p>
-                Carefully selected Indonesian vanilla beans for
-                food, bakery, and flavor industries.
-              </p>
-            </div>
-          </div>
-
+          <img
+            src="/cinnamon_bg.jpeg"
+            alt=""
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
         </div>
-
       </section>
-
-      {/* WHY WORK WITH US */}
-
-      <section
-        className="py-24 text-white"
-        style={{ backgroundColor: colors.darkGreen }}
-      >
-
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-4xl text-center mb-14">
-            Why Work With Us
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-
-            <div>
-              <h3 className="text-2xl mb-3">Reliable Sourcing</h3>
-            </div>
-
-            <div>
-              <h3 className="text-2xl mb-3">Quality Control</h3>
-            </div>
-
-            <div>
-              <h3 className="text-2xl mb-3">Export Support</h3>
-            </div>
-
-            <div>
-              <h3 className="text-2xl mb-3">Buyer Focused</h3>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* CONTACT */}
-
-      <section className="py-24 text-center">
-
-        <h2
-          className="text-4xl mb-6"
-          style={{ color: colors.darkGreen }}
-        >
-          Let's Connect
-        </h2>
-
-        <p className="mb-10 text-lg">
-          Looking for reliable Indonesian spice suppliers?
-        </p>
-
-        <a
-          href="/Delvora-Origins-Company-Profile.pdf"
-          className="px-10 py-4 rounded-xl text-white font-semibold"
-          style={{ backgroundColor: colors.gold }}
-        >
-          Download Company Profile
-        </a>
-
-      </section>
-
-    </main>
+    </>
   );
 }
