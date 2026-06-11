@@ -103,19 +103,19 @@ return (
           </a>
 
           <a
+            href="/company-profile"
+            className="px-8 py-4 rounded-xl border border text-white"
+            style={{ borderColor: colors.gold }}
+          >
+            Request Company Profile
+          </a>
+
+          <a
             href="#contact"
             className="px-8 py-4 rounded-xl border text-white inline-block"
             style={{ borderColor: colors.gold }}
           >
             Contact Us
-          </a>
-
-          <a
-            href="/company-profile"
-            className="px-8 py-4 rounded-xl border border text-white"
-            style={{ borderColor: colors.gold }}
-          >
-            Company Profile
           </a>
 
         </div>

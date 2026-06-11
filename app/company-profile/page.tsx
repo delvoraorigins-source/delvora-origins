@@ -76,9 +76,9 @@ export default function CompanyProfile() {
               margin: 0,
             }}
           >
-            Premium Indonesian
+            Sourcing Indonesian Spices
             <br />
-            Vanilla & Cinnamon
+            for Global Markets
           </h1>
 
           <div
