@@ -665,7 +665,7 @@ export default function CompanyProfile() {
           style={{
             flex: 1,
             textAlign: "center",
-            maxWidth: "650px",
+            maxWidth: "700px",
           }}
         >
           <p
@@ -710,12 +710,89 @@ export default function CompanyProfile() {
               textAlign: "center",
             }}
           >
-            We carefully source our products from trusted regions 
-            across Indonesia, where generations of expertise and 
-            ideal growing conditions ensure exceptional quality. 
-            Each product is prepared to meet international standards, 
+            We carefully source our products from trusted regions
+            across Indonesia, where generations of expertise and
+            ideal growing conditions ensure exceptional quality.
+            Each product is prepared to meet international standards,
             delivering reliability and consistency to global partners.
           </p>
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "20px",
+              marginTop: "40px",
+            }}
+          >
+            <div
+              style={{
+                flex: 1,
+                maxWidth: "250px",
+                border: "1px solid rgba(212,175,55,0.25)",
+                borderRadius: "18px",
+                padding: "18px",
+                background: "rgba(255,255,255,0.03)",
+              }}
+            >
+              <h4
+                style={{
+                  color: "#D4AF37",
+                  margin: "0 0 12px",
+                  fontSize: "16px",
+                  letterSpacing: "2px",
+                }}
+              >
+                VANILLA
+              </h4>
+
+              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+                Length: 12–20 cm
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+                Moisture: 25–35%
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+                Gourmet & Extract Grade
+              </p>
+            </div>
+
+            <div
+              style={{
+                flex: 1,
+                maxWidth: "250px",
+                border: "1px solid rgba(212,175,55,0.25)",
+                borderRadius: "18px",
+                padding: "18px",
+                background: "rgba(255,255,255,0.03)",
+              }}
+            >
+              <h4
+                style={{
+                  color: "#D4AF37",
+                  margin: "0 0 12px",
+                  fontSize: "16px",
+                  letterSpacing: "2px",
+                }}
+              >
+                CINNAMON
+              </h4>
+
+              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+                Cassia & Ceylon
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+                Moisture: 10–13%
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+                AA, A, KA, KB, KC Grades
+              </p>
+            </div>
+          </div>
         </div>
 
         <div
