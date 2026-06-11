@@ -630,7 +630,7 @@ export default function CompanyProfile() {
     </div>
   </section>
 
-            {/* PAGE 4 */}
+       {/* PAGE 4 */}
       <section
         style={{
           height: "100vh",
@@ -644,10 +644,11 @@ export default function CompanyProfile() {
       >
         <div
           style={{
-            width: "28%",
-            height: "78%",
+            width: "30%",
+            height: "72%",
             overflow: "hidden",
             borderRadius: "28px",
+            marginTop: "50px",
           }}
         >
           <img
@@ -665,7 +666,7 @@ export default function CompanyProfile() {
           style={{
             flex: 1,
             textAlign: "center",
-            maxWidth: "760px",
+            maxWidth: "950px",
           }}
         >
           <p
@@ -705,7 +706,7 @@ export default function CompanyProfile() {
           <p
             style={{
               color: "#CFC8BB",
-              fontSize: "20px",
+              fontSize: "18px",
               lineHeight: "1.9",
               textAlign: "center",
             }}
@@ -721,7 +722,7 @@ export default function CompanyProfile() {
             style={{
               display: "flex",
               justifyContent: "center",
-              gap: "20px",
+              gap: "30px",
               marginTop: "40px",
               textAlign: "left",
             }}
@@ -730,44 +731,40 @@ export default function CompanyProfile() {
             <div
               style={{
                 flex: 1,
+                minWidth: "350px",
                 border: "1px solid rgba(212,175,55,0.25)",
                 borderRadius: "18px",
-                padding: "18px",
+                padding: "28px 32px",
                 background: "rgba(255,255,255,0.03)",
               }}
             >
               <h4
                 style={{
                   color: "#D4AF37",
-                  margin: "0 0 12px",
-                  fontSize: "16px",
-                  letterSpacing: "2px",
+                  margin: "0 0 10px",
+                  fontSize: "14px",
+                  letterSpacing: "3px",
                 }}
               >
                 VANILLA
               </h4>
 
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Origin: Indonesia
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Length: 12–20 cm
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Moisture: 25–35%
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Grades: Gourmet Grade & Extract Grade
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Packaging: Vacuum Packed
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Quality: Premium Export Quality
               </p>
             </div>
@@ -776,44 +773,40 @@ export default function CompanyProfile() {
             <div
               style={{
                 flex: 1,
+                minWidth: "320px",
                 border: "1px solid rgba(212,175,55,0.25)",
                 borderRadius: "18px",
-                padding: "18px",
+                padding: "28px 32px",
                 background: "rgba(255,255,255,0.03)",
               }}
             >
               <h4
                 style={{
                   color: "#D4AF37",
-                  margin: "0 0 12px",
-                  fontSize: "16px",
-                  letterSpacing: "2px",
+                  margin: "0 0 16px",
+                  fontSize: "14px",
+                  letterSpacing: "3px",
                 }}
               >
                 CINNAMON
               </h4>
 
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Origin: Indonesia
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Type: Cassia & Ceylon Cinnamon
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Forms: Sticks, Broken Sticks, Cut
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Moisture: 10–13%
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Grades: AA, A, KA, KB, KC
               </p>
-
-              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+              <p style={{ color: "#F5F0E6", margin: "8px 0", fontSize: "13px" }}>
                 Packaging: Export-grade packaging
               </p>
             </div>
@@ -822,10 +815,11 @@ export default function CompanyProfile() {
 
         <div
           style={{
-            width: "28%",
-            height: "78%",
+            width: "30%",
+            height: "72%",
             overflow: "hidden",
             borderRadius: "28px",
+            marginTop: "50px",
           }}
         >
           <img
@@ -856,10 +850,11 @@ export default function CompanyProfile() {
         <div
           style={{
             flex: 1,
-            background: "rgba(255,255,255,0.04)",
+            minHeight: "260px",
             border: "1px solid rgba(212,175,55,0.25)",
-            borderRadius: "28px",
-            overflow: "hidden",
+            borderRadius: "22px",
+            padding: "28px",
+            background: "rgba(255,255,255,0.04)",
           }}
         >
           <img
@@ -961,10 +956,11 @@ export default function CompanyProfile() {
         <div
           style={{
             flex: 1,
-            background: "rgba(255,255,255,0.04)",
+            minHeight: "260px",
             border: "1px solid rgba(212,175,55,0.25)",
-            borderRadius: "28px",
-            overflow: "hidden",
+            borderRadius: "22px",
+            padding: "28px",
+            background: "rgba(255,255,255,0.04)",
           }}
         >
           <img
