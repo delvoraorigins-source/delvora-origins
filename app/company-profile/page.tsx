@@ -630,7 +630,7 @@ export default function CompanyProfile() {
     </div>
   </section>
 
-      {/* PAGE 4 */}
+            {/* PAGE 4 */}
       <section
         style={{
           height: "100vh",
@@ -665,7 +665,7 @@ export default function CompanyProfile() {
           style={{
             flex: 1,
             textAlign: "center",
-            maxWidth: "700px",
+            maxWidth: "760px",
           }}
         >
           <p
@@ -723,12 +723,13 @@ export default function CompanyProfile() {
               justifyContent: "center",
               gap: "20px",
               marginTop: "40px",
+              textAlign: "left",
             }}
           >
+            {/* VANILLA */}
             <div
               style={{
                 flex: 1,
-                maxWidth: "250px",
                 border: "1px solid rgba(212,175,55,0.25)",
                 borderRadius: "18px",
                 padding: "18px",
@@ -746,23 +747,35 @@ export default function CompanyProfile() {
                 VANILLA
               </h4>
 
-              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Origin: Indonesia
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
                 Length: 12–20 cm
               </p>
 
-              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
                 Moisture: 25–35%
               </p>
 
-              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
-                Gourmet & Extract Grade
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Grades: Gourmet Grade & Extract Grade
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Packaging: Vacuum Packed
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Quality: Premium Export Quality
               </p>
             </div>
 
+            {/* CINNAMON */}
             <div
               style={{
                 flex: 1,
-                maxWidth: "250px",
                 border: "1px solid rgba(212,175,55,0.25)",
                 borderRadius: "18px",
                 padding: "18px",
@@ -780,16 +793,28 @@ export default function CompanyProfile() {
                 CINNAMON
               </h4>
 
-              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
-                Cassia & Ceylon
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Origin: Indonesia
               </p>
 
-              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Type: Cassia & Ceylon Cinnamon
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Forms: Sticks, Broken Sticks, Cut
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
                 Moisture: 10–13%
               </p>
 
-              <p style={{ color: "#F5F0E6", margin: "6px 0", fontSize: "15px" }}>
-                AA, A, KA, KB, KC Grades
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Grades: AA, A, KA, KB, KC
+              </p>
+
+              <p style={{ color: "#F5F0E6", margin: "5px 0", fontSize: "14px" }}>
+                Packaging: Export-grade packaging
               </p>
             </div>
           </div>
