@@ -737,6 +737,177 @@ export default function CompanyProfile() {
           />
         </div>
       </section>
+
+            {/* PAGE 5 */}
+      <section
+        style={{
+          height: "100vh",
+          background: "#102818",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "70px 90px",
+          gap: "50px",
+        }}
+      >
+        {/* Cinnamon */}
+        <div
+          style={{
+            flex: 1,
+            background: "rgba(255,255,255,0.04)",
+            border: "1px solid rgba(212,175,55,0.25)",
+            borderRadius: "28px",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src="/cinnamon_bg.jpeg"
+            alt="Indonesian Cinnamon"
+            style={{
+              width: "100%",
+              height: "260px",
+              objectFit: "cover",
+            }}
+          />
+
+          <div
+            style={{
+              padding: "30px",
+            }}
+          >
+            <h3
+              style={{
+                color: "#D4AF37",
+                fontSize: "30px",
+                fontFamily: "Georgia, serif",
+                marginBottom: "20px",
+              }}
+            >
+              Indonesian Cinnamon
+            </h3>
+
+            <div
+              style={{
+                color: "#D8D2C7",
+                fontSize: "17px",
+                lineHeight: "2",
+              }}
+            >
+              <p><strong>Origin:</strong> Indonesia</p>
+              <p><strong>Type:</strong> Cassia & Ceylon Cinnamon</p>
+              <p><strong>Forms:</strong> Sticks, Broken Sticks, Cut</p>
+              <p><strong>Moisture:</strong> 10–13%</p>
+              <p><strong>Grades:</strong> AA, A, KA, KB, KC</p>
+              <p><strong>Packaging:</strong> Export-grade packaging</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Center Title */}
+        <div
+          style={{
+            width: "280px",
+            textAlign: "center",
+          }}
+        >
+          <p
+            style={{
+              color: "#D4AF37",
+              letterSpacing: "6px",
+              fontSize: "16px",
+            }}
+          >
+            PRODUCT DETAILS
+          </p>
+
+          <div
+            style={{
+              width: "80px",
+              height: "2px",
+              background: "#D4AF37",
+              margin: "25px auto",
+            }}
+          />
+
+          <h2
+            style={{
+              color: "#F5F0E6",
+              fontSize: "42px",
+              lineHeight: "1.2",
+              fontFamily: "Georgia, serif",
+              margin: 0,
+            }}
+          >
+            Product
+            <br />
+            Specifications
+          </h2>
+
+          <p
+            style={{
+              color: "#CFC8BB",
+              marginTop: "25px",
+              lineHeight: "1.8",
+              fontSize: "16px",
+            }}
+          >
+            Export-quality Indonesian ingredients sourced from trusted origins and prepared to meet international market requirements.
+          </p>
+        </div>
+
+        {/* Vanilla */}
+        <div
+          style={{
+            flex: 1,
+            background: "rgba(255,255,255,0.04)",
+            border: "1px solid rgba(212,175,55,0.25)",
+            borderRadius: "28px",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src="/vanilla_bg.jpeg"
+            alt="Indonesian Vanilla"
+            style={{
+              width: "100%",
+              height: "260px",
+              objectFit: "cover",
+            }}
+          />
+
+          <div
+            style={{
+              padding: "30px",
+            }}
+          >
+            <h3
+              style={{
+                color: "#D4AF37",
+                fontSize: "30px",
+                fontFamily: "Georgia, serif",
+                marginBottom: "20px",
+              }}
+            >
+              Indonesian Vanilla
+            </h3>
+
+            <div
+              style={{
+                color: "#D8D2C7",
+                fontSize: "17px",
+                lineHeight: "2",
+              }}
+            >
+              <p><strong>Origin:</strong> Indonesia</p>
+              <p><strong>Length:</strong> 12–20 cm</p>
+              <p><strong>Moisture:</strong> 25–35%</p>
+              <p><strong>Grades:</strong> Gourmet Grade & Extract Grade</p>
+              <p><strong>Packaging:</strong> Vacuum Packed</p>
+              <p><strong>Quality:</strong> Premium Export Quality</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
