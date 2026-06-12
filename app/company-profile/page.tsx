@@ -1084,7 +1084,7 @@ export default function CompanyProfile() {
               color: "#4A4A4A",
               fontSize: "18px",
               lineHeight: "1.9",
-              textAlign: "Justify",
+              textAlign: "justify",
             }}
           >
             Our sourcing process includes collaboration with selected
