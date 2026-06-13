@@ -34,7 +34,7 @@ return (
         src="/Logo_Delvora2.png"
         alt="Logo"
         width={260}
-        height={260}
+        height={240}
         className="object-contain"
       />
 
