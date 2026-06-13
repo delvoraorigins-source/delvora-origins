@@ -95,11 +95,11 @@ return (
         <div className="flex gap-4 mt-10 flex-wrap">
 
           <a
-            href="mailto:info@delvoraorigins.com?subject=Catalogue Request"
+            href="/request-quote"
             className="px-8 py-4 rounded-xl text-white font-semibold inline-block"
             style={{ backgroundColor: colors.gold }}
           >
-            Request Catalog
+            Request for Quote
           </a>
 
           <a
