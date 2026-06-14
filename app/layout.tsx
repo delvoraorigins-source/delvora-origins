@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Delvora Origins",
   description:
-    "Premium Indonesian spices and natural ingredients supplier.",
+    "Indonesian Spice Sourcing & Export",
 };
 
 export default function RootLayout({
