@@ -36,7 +36,6 @@ export async function POST(req: Request) {
     const notificationResult = await resend.emails.send({
       from: "Delvora Origins <info@delvoraorigins.com>",
       to: "info@delvoraorigins.com",
-      reply_to: "info@delvoraorigins.com",
       subject: "Company Profile Request",
       html: `
         <h2>New Lead Received</h2>
