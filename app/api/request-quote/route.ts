@@ -5,6 +5,12 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
 try {
+
+const body = await req.json();
+
+console.log("REQUEST BODY:", body);
+console.log("EMAIL:", body.email);
+
 const {
 fullName,
 companyName,
@@ -18,10 +24,8 @@ destinationPort,
 incoterm,
 packaging,
 requirements,
-} = await req.json();
+} = body;
 
-console.log("REQUEST BODY:", body);
-console.log("EMAIL:", body.email);
 
 // RFQ Notification to Delvora
 
