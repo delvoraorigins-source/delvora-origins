@@ -26,6 +26,24 @@ packaging,
 requirements,
 } = body;
 
+// VALIDATION 
+    if (
+      !fullName ||
+      !companyName ||
+      !email ||
+      !phone ||
+      !country ||
+      !productRequested ||
+      !quantity
+    ) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Please fill all required fields",
+        },
+        { status: 400 }
+      );
+    }
 
 // RFQ Notification to Delvora
 
