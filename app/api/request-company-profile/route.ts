@@ -36,7 +36,8 @@ export async function POST(req: Request) {
     const notificationResult = await resend.emails.send({
       from: "Delvora Origins <info@delvoraorigins.com>",
       to: "info@delvoraorigins.com",
-      subject: "New Company Profile Request",
+      reply_to: "info@delvoraorigins.com",
+      subject: "Company Profile Request",
       html: `
         <h2>New Lead Received</h2>
         <p><strong>Name:</strong> ${fullName}</p>
@@ -72,9 +73,13 @@ export async function POST(req: Request) {
         <p>Dear ${fullName},</p>
 
         <p>
-          Thank you for your interest in Delvora Origins.
-          We are pleased to share our Company Profile.
+          We’ve received your request for our company profile.
+          Attached is the document you requested.
         </p>
+
+        <P>
+          If you need anything else, just reply to this email.
+        <P>
 
         <p>
           Warm Regards,<br/>
