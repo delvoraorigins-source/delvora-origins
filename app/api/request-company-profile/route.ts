@@ -20,7 +20,7 @@ console.log({
 
 const notificationResult =
   await resend.emails.send({
-    from: "Delvora Origins <onboarding@resend.dev>",
+    from: "Delvora Origins <info@delvoraorigins.com>",
     to: "info@delvoraorigins.com",
     subject: "New Company Profile Request",
     html: `
