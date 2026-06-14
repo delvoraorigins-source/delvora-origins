@@ -1,5 +1,11 @@
 import "./globals.css";
 
+export const metadata = {
+  title: "Delvora Origins",
+  description:
+    "Premium Indonesian spices and natural ingredients supplier.",
+};
+
 export default function RootLayout({
   children,
 }: {
