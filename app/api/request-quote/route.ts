@@ -20,6 +20,9 @@ packaging,
 requirements,
 } = await req.json();
 
+console.log("REQUEST BODY:", body);
+console.log("EMAIL:", body.email);
+
 // RFQ Notification to Delvora
 
 await resend.emails.send({
