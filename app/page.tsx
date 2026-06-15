@@ -237,7 +237,7 @@ return (
           <div className="space-y-2 text-sm text-gray-700">
 
             <p><strong>Origin:</strong> Indonesia</p>
-            <p><strong>Type:</strong> Cassia Cinnamon, Ceylon Cinnamon</p>
+            <p><strong>Type:</strong> Cassia Cinnamon</p>
             <p><strong>Product Form:</strong> Cinnamon Sticks, Broken Stick Cinnamon, Cinnamon Cut</p>
             <p><strong>Moisture:</strong> 10%-13%</p>
             <p><strong>Packaging:</strong> Export-grade packaging available according to product specifications</p>
