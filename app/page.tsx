@@ -1,4 +1,15 @@
-"use client";
+export const metadata = {
+  title: "Delvora Origins | Indonesian Spice & Agricultural Export Supplier",
+  description:
+    "Delvora Origins supplies Indonesian spices such as cinnamon and vanilla for global food industries. Reliable sourcing and export solutions from Indonesia.",
+  keywords: [
+    "Indonesian spices export",
+    "cinnamon supplier Indonesia",
+    "vanilla beans Indonesia",
+    "spice exporter Indonesia",
+    "food ingredients Indonesia export",
+  ],
+};
 
 import Image from "next/image";
 
