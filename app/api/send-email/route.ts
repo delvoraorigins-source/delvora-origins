@@ -74,9 +74,11 @@ export async function POST(req: Request) {
                 color:#333;
                 font-size:15px;
                 line-height:1.9;
-              ">
-                ${message.replace(/\n/g, "<br />")}
-              </div>
+            ">
+                ${message
+                    .replace(/\[([^\]]+)\]\(mailto:[^)]+\)/g, "$1")
+                    .replace(/\n/g, "<br />")}
+                </div>
 
               <div style="
                 margin-top:40px;
@@ -97,7 +99,7 @@ export async function POST(req: Request) {
                   color:#444;
                   margin-bottom:12px;
                 ">
-                  Indonesian Spice & Agricultural Export Supplier
+                  Indonesian Spice Sourcing & Exports
                 </div>
 
                 <div style="
