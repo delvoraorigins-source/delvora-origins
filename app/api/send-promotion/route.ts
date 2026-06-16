@@ -11,6 +11,20 @@ export async function POST(req: Request) {
     const subject = formData.get("subject") as string;
     const message = formData.get("message") as string;
 
+    // =========================
+    // CLEAN MESSAGE (FIX MAILTO)
+    // =========================
+    const cleanMessage = message
+      .replace(/\[([^\]]+)\]\(mailto:[^)]+\)/g, "$1")
+      .replace(/mailto:\d*/g, "")
+      .replace(/mailto:/g, "")
+      .replace(/\n/g, "<br />");
+
+
+    // =========================
+    // ATTACHMENTS
+    // =========================
+
     const uploadedFiles = formData.getAll("attachments") as File[];
 
     const attachments = await Promise.all(
@@ -75,10 +89,8 @@ export async function POST(req: Request) {
                 font-size:15px;
                 line-height:1.9;
             ">
-                ${message
-                    .replace(/\[([^\]]+)\]\(mailto:[^)]+\)/g, "$1")
-                    .replace(/\n/g, "<br />")}
-                </div>
+                ${cleanMessage}
+            </div>
 
               <div style="
                 margin-top:40px;

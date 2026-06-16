@@ -9,8 +9,20 @@ export async function POST(req: Request) {
 
     const to = formData.get("to") as string;
     const subject = formData.get("subject") as string;
-    const message = formData.get("message") as string;
+    const message = (formData.get("message") as string) || "";
 
+    // =========================
+    // CLEAN MESSAGE (ANTI MAILTO BUG)
+    // =========================
+    const cleanMessage = message
+      .replace(/\[([^\]]+)\]\(mailto:[^)]+\)/g, "$1")
+      .replace(/mailto:\d*/g, "")
+      .replace(/mailto:/g, "")
+      .replace(/\n/g, "<br />");
+
+    // =========================
+    // ATTACHMENTS
+    // =========================
     const uploadedFiles = formData.getAll("attachments") as File[];
 
     const attachments = await Promise.all(
@@ -24,9 +36,17 @@ export async function POST(req: Request) {
       })
     );
 
+    // =========================
+    // PLAIN TEMPLATE
+    // =========================
     const html = `
-      <div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.8;">
-        <p>${message.replace(/\n/g, "<br />")}</p>
+      <div style="
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #222;
+        line-height: 1.8;
+      ">
+        <p>${cleanMessage}</p>
 
         <br/>
 
