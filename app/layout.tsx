@@ -4,7 +4,7 @@ export const metadata = {
   title: "Delvora Origins",
   description: "Indonesian Spice Sourcing & Export",
   icons: {
-    icon: "/icon.png",
+    icon: "/favicon.ico?v=999",
   },
 };
 
