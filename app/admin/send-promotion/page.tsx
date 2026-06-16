@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef} from "react";
 
 export default function SendEmailPage() {
+    const fileRef = useRef<HTMLInputElement>(null);
+
   const [to, setTo] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -31,7 +33,7 @@ export default function SendEmailPage() {
         });
       }
 
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/api/send-promotion", {
         method: "POST",
         body: formData,
       });
