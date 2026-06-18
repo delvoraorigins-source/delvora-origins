@@ -37,7 +37,7 @@ export async function POST(req: Request) {
     );
 
     // =========================
-    // PLAIN TEMPLATE
+    // EMAIL TEMPLATE
     // =========================
     const html = `
       <div style="
@@ -46,16 +46,46 @@ export async function POST(req: Request) {
         color: #222;
         line-height: 1.8;
       ">
-        <p>${cleanMessage}</p>
+        ${cleanMessage}
 
-        <br/>
+        <div style="
+          margin-top: 32px;
+          border-top: 2px solid #B68D40;
+          padding-top: 20px;
+        ">
 
-        <p>Best regards,</p>
-        <p>
-          Delvora Origins<br/>
-          info@delvoraorigins.com<br/>
-          www.delvoraorigins.com
-        </p>
+          <div style="
+            font-size: 18px;
+            font-weight: 700;
+            color: #B68D40;
+            margin-bottom: 4px;
+          ">
+            Delvora Origins
+          </div>
+
+          <div style="
+            color: #444;
+            margin-bottom: 10px;
+          ">
+            Indonesian Spice Sourcing & Exports
+          </div>
+
+          <div style="
+            color: #777;
+            margin-bottom: 14px;
+          ">
+            Cinnamon • Vanilla • Agricultural Products
+          </div>
+
+          <div style="
+            font-size: 14px;
+            color: #555;
+          ">
+            Email: info@delvoraorigins.com<br/>
+            Website: www.delvoraorigins.com
+          </div>
+
+        </div>
       </div>
     `;
 
@@ -69,15 +99,26 @@ export async function POST(req: Request) {
 
     if (error) {
       return NextResponse.json(
-        { success: false, error: error.message },
+        {
+          success: false,
+          error: error.message,
+        },
         { status: 500 }
       );
     }
 
-    return NextResponse.json({ success: true, data });
-  } catch (err) {
+    return NextResponse.json({
+      success: true,
+      data,
+    });
+  } catch (error) {
+    console.error("SEND EMAIL ERROR:", error);
+
     return NextResponse.json(
-      { success: false, error: "Failed to send email" },
+      {
+        success: false,
+        error: "Failed to send email",
+      },
       { status: 500 }
     );
   }
