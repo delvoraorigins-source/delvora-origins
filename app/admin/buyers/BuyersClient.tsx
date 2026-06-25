@@ -6,9 +6,12 @@ import { supabase } from "@/lib/supabase";
 export default function BuyersClient() {
   const [buyers, setBuyers] = useState<any[]>([]);
   const [search, setSearch] = useState("");
+  const [editingId, setEditingId] = useState<number | null>(null);
 
   const [form, setForm] = useState({
     company: "",
+    website: "",
+    number: "",
     email: "",
     country: "",
     interest: "",
@@ -22,7 +25,7 @@ export default function BuyersClient() {
     const { data } = await supabase
       .from("buyers")
       .select("*")
-      .order("created_at", { ascending: false });
+      .order("company", { ascending: true });
 
     setBuyers(data || []);
   }
@@ -35,9 +38,22 @@ export default function BuyersClient() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    const { error } = await supabase
-      .from("buyers")
-      .insert([form]);
+    let error;
+
+      if (editingId) {
+      const result = await supabase
+        .from("buyers")
+        .update(form)
+        .eq("id", editingId);
+
+      error = result.error;
+    } else {
+      const result = await supabase
+        .from("buyers")
+        .insert([form]);
+
+      error = result.error;
+    }
 
     if (error) {
       alert(error.message);
@@ -46,6 +62,8 @@ export default function BuyersClient() {
 
     setForm({
       company: "",
+      website: "",
+      number: "",
       email: "",
       country: "",
       interest: "",
@@ -75,10 +93,47 @@ export default function BuyersClient() {
     fetchBuyers();
   }
 
+  async function deleteBuyer(id: number) {
+  const confirmed = window.confirm(
+    "Delete this buyer permanently?"
+  );
+
+  if (!confirmed) return;
+
+  const { error } = await supabase
+    .from("buyers")
+    .delete()
+    .eq("id", id);
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  fetchBuyers();
+}
+  function editBuyer(b: any) {
+    setEditingId(b.id);
+
+    setForm({
+    company: b.company || "",
+    website: b.website || "",
+    number: b.number || "",
+    email: b.email || "",
+    country: b.country || "",
+    interest: b.interest || "",
+    notes: b.notes || "",
+    tags: b.tags || "",
+    status: b.status || "Lead",
+    });
+  }
+
   // EXPORT CSV
   function exportCSV() {
     const headers = [
       "Company",
+      "Website",
+      "Number",
       "Email",
       "Country",
       "Interest",
@@ -89,6 +144,8 @@ export default function BuyersClient() {
 
     const rows = buyers.map((b) => [
       b.company,
+      b.website,
+      b.number,
       b.email,
       b.country,
       b.interest,
@@ -97,9 +154,14 @@ export default function BuyersClient() {
       b.status,
     ]);
 
+    const BOM = "\uFEFF";
+
     const csv =
+      BOM +
       [headers, ...rows]
-        .map((r) => r.map((v) => `"${v || ""}"`).join(","))
+        .map((r) =>
+          r.map((v) => `"${String(v || "").replace(/"/g, '""')}"`).join(";")
+        )
         .join("\n");
 
     const blob = new Blob([csv], {
@@ -149,6 +211,24 @@ export default function BuyersClient() {
               value={form.company}
               onChange={(e) =>
                 setForm({ ...form, company: e.target.value })
+              }
+            />
+
+            <input
+              className="w-full border rounded-xl px-4 py-3"
+              placeholder="Website"
+              value={form.website}
+              onChange={(e) =>
+                setForm({ ...form, website: e.target.value })
+              }
+            />
+
+             <input
+              className="w-full border rounded-xl px-4 py-3"
+              placeholder="Number"
+              value={form.number}
+              onChange={(e) =>
+                setForm({ ...form, number: e.target.value })
               }
             />
 
@@ -237,15 +317,36 @@ export default function BuyersClient() {
 
                     <h3 className="font-medium">{b.company}</h3>
 
-                    <p className="text-sm text-gray-500">
-                      {b.country} • {b.email}
-                    </p>
+                  {b.website && (
+                    <a
+                      href={
+                        b.website.startsWith("http")
+                          ? b.website
+                          : `https://${b.website}`
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-[#B68D40] hover:underline"
+                 >
+                  {b.website}
+                </a>
+              )}
+
+              {b.number && (
+                <p className="text-sm text-[#B68D40] font-medium">
+                  {b.number}
+                </p>
+              )}
+
+              <p className="text-sm text-gray-500">
+                {b.country} • {b.email}
+              </p>
 
                     <p className="text-xs text-gray-400 mt-1">
                       {b.interest}
                     </p>
 
-                    <p className="text-xs text-gray-300 mt-1">
+                    <p className="text-xs text-gray-600 mt-2 leading-relaxed">
                       {b.notes}
                     </p>
 
@@ -271,6 +372,20 @@ export default function BuyersClient() {
                         {b.status === "Contacted"
                           ? "Mark Lead"
                           : "Mark Contacted"}
+                      </button>
+
+                      <button
+                        onClick={() => editBuyer(b)}
+                        className="text-xs px-3 py-1 rounded-lg bg-black text-white"
+                      >
+                        Edit
+                      </button>
+
+                      <button
+                        onClick={() => deleteBuyer(b.id)}
+                        className="text-xs px-3 py-1 rounded-lg bg-red-600 text-white"
+                      >
+                        Delete
                       </button>
 
                       <span className="text-xs px-2 py-1 bg-gray-100 rounded-lg">
